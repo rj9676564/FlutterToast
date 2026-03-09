@@ -1,5 +1,9 @@
 #import "FluttertoastPlugin.h"
+#if __has_include(<Toast/UIView+Toast.h>)
 #import <Toast/UIView+Toast.h>
+#else
+#import "UIView+Toast.h"
+#endif
 
 static NSString *const CHANNEL_NAME = @"PonnamKarthik/fluttertoast";
 
